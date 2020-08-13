@@ -1,0 +1,11 @@
+C:\Users\WD050729\source\repos\Screen Shot Saver\Screen Shot Saver\bin\Release\Screen Shot Saver.exe.config
+C:\Users\WD050729\source\repos\Screen Shot Saver\Screen Shot Saver\bin\Release\Screen Shot Saver.exe
+C:\Users\WD050729\source\repos\Screen Shot Saver\Screen Shot Saver\bin\Release\Screen Shot Saver.pdb
+C:\Users\WD050729\source\repos\Screen Shot Saver\Screen Shot Saver\obj\Release\Screen_Shot_Saver.Form1.resources
+C:\Users\WD050729\source\repos\Screen Shot Saver\Screen Shot Saver\obj\Release\Screen_Shot_Saver.Properties.Resources.resources
+C:\Users\WD050729\source\repos\Screen Shot Saver\Screen Shot Saver\obj\Release\Screen Shot Saver.csproj.GenerateResource.cache
+C:\Users\WD050729\source\repos\Screen Shot Saver\Screen Shot Saver\obj\Release\Screen Shot Saver.csproj.CoreCompileInputs.cache
+C:\Users\WD050729\source\repos\Screen Shot Saver\Screen Shot Saver\obj\Release\Screen Shot Saver.exe
+C:\Users\WD050729\source\repos\Screen Shot Saver\Screen Shot Saver\obj\Release\Screen Shot Saver.pdb
+C:\Users\WD050729\source\repos\Screen Shot Saver\Screen Shot Saver\obj\Release\Screen Shot Saver.csprojAssemblyReference.cache
+C:\Users\WD050729\source\repos\Screen Shot Saver\Screen Shot Saver\obj\Release\Screen_Shot_Saver.Form2.resources
