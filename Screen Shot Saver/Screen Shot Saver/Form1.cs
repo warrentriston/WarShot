@@ -87,25 +87,21 @@ namespace Screen_Shot_Saver
 
         private void CaptureMyScreen()
         {
-            SendKeys.Send("{PRTSC}");
-            SendKeys.Send("{PRTSC}");
-            SendKeys.Send("{PRTSC}");
-            SendKeys.Send("{PRTSC}");
-            SendKeys.Send("{PRTSC}");
-            SendKeys.Send("{PRTSC}");
-            SendKeys.Send("{PRTSC}");
-            SendKeys.Send("{PRTSC}");
-            SendKeys.Send("{PRTSC}");
-            SendKeys.Send("{PRTSC}");
+            System.Threading.Thread.Sleep(1000);
             SendKeys.Send("{PRTSC}");
             SendKeys.Send("{PRTSC}");
 
             if (Clipboard.ContainsImage())
             {
                 Image Img = Clipboard.GetImage();
-                Bitmap bitmap = new Bitmap(Img);
-                Bitmap bmpCrop = bitmap.Clone(new Rectangle(0, 0, Img.Width, Img.Height - 50), bitmap.PixelFormat);
-                bmpCrop.Save(directory + textBox1.Text + ".jpg", ImageFormat.Jpeg);
+                using (Bitmap bitmap = new Bitmap(Img.Width, Img.Height - 50))
+                {
+                    using (Graphics g = Graphics.FromImage(bitmap))
+                    {
+                        g.CopyFromScreen(Point.Empty, Point.Empty, Img.Size);
+                    }
+                    bitmap.Save(directory + textBox1.Text + ".jpg", ImageFormat.Jpeg);
+                }
             }
         }
 
