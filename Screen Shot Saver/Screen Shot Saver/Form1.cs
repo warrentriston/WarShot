@@ -94,7 +94,9 @@ namespace Screen_Shot_Saver
             if (Clipboard.ContainsImage())
             {
                 Image Img = Clipboard.GetImage();
-                using (Bitmap bitmap = new Bitmap(Img.Width, Img.Height - 50))
+                int taskbarSize = Screen.PrimaryScreen.Bounds.Height - Screen.PrimaryScreen.WorkingArea.Height;
+                taskbarSize += (taskbarSize / 4);
+                using (Bitmap bitmap = new Bitmap(Img.Width, Img.Height - taskbarSize))
                 {
                     using (Graphics g = Graphics.FromImage(bitmap))
                     {
